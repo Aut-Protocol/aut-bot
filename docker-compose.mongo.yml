@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  bot-mongo:
+    container_name: bot-mongo
+    image: mongo
+    volumes:
+      - ./data-dev:/data/db
+    ports:
+      - "27017:27017"
+    networks:
+      - skill-wallet-bot
+
+networks:
+  skill-wallet-bot:

@@ -1,0 +1,53 @@
+{
+	"info": {
+		"_postman_id": "1224eeaa-1307-4536-beb9-97ec9955fd0e",
+		"name": "Discord Webhook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST /Webhook message",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Disposition",
+						"value": "form-data",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "",
+							"value": "",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "content",
+							"value": "'Test msg contet'",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://discord.com/api/webhooks/941418734701133935/D0rD7lwVLQFaEbv9wJ8Zgn2ROIAzOFVIkE8tQRwutctHST5k_AIucwAjCgejv8o_Wm3T",
+					"protocol": "https",
+					"host": [
+						"discord",
+						"com"
+					],
+					"path": [
+						"api",
+						"webhooks",
+						"941418734701133935",
+						"D0rD7lwVLQFaEbv9wJ8Zgn2ROIAzOFVIkE8tQRwutctHST5k_AIucwAjCgejv8o_Wm3T"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
